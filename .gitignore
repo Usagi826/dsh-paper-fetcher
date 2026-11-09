@@ -35,3 +35,4 @@ desktop.ini
 .publish/
 
 publish.cjs
+.npm-cache/
