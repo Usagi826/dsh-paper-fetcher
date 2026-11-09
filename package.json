@@ -1,5 +1,5 @@
 {
-  "name": "dsh-paper-download",
+  "name": "dsh-paper-fetcher",
   "version": "1.0.0",
   "description": "文献下载：在左侧面板输入论文标题或 DOI，自动检索开放获取 PDF 并按规范命名保存到所选目录。",
   "type": "module",
@@ -39,12 +39,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Usagi826/dsh-paper-download.git"
+    "url": "git+https://github.com/Usagi826/dsh-paper-fetcher.git"
   },
   "bugs": {
-    "url": "https://github.com/Usagi826/dsh-paper-download/issues"
+    "url": "https://github.com/Usagi826/dsh-paper-fetcher/issues"
   },
-  "homepage": "https://github.com/Usagi826/dsh-paper-download#readme",
+  "homepage": "https://github.com/Usagi826/dsh-paper-fetcher#readme",
   "engines": {
     "node": ">=22"
   },

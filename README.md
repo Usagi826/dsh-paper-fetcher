@@ -1,4 +1,4 @@
-# 文献下载 (dsh-paper-download)
+# 文献下载 (dsh-paper-fetcher)
 
 在左侧「文献下载」面板输入论文标题 / DOI / arXiv 编号 / PDF 直链，自动检索开放获取 PDF，
 按 `{年份} - {期刊缩写} - {标题}.pdf` 命名保存到所选目录（默认桌面）。
@@ -11,7 +11,7 @@
 需要先安装 **DeepSeek Harness 桌面版**。
 
 1. 打开 **插件** 页，点右上角 **添加插件**。
-2. 填入仓库地址 `https://github.com/Usagi826/dsh-paper-download`，点 **安装**。
+2. 填入包名 `dsh-paper-fetcher`（或仓库地址 `Usagi826/dsh-paper-fetcher`），点 **安装**。
 3. 重启 DeepSeek Harness，左侧「自动化」下方出现 **文献下载** 图标即安装成功。
 
 升级时在插件页重装即可。插件以本机用户权限运行，请只安装来源可信的版本。
