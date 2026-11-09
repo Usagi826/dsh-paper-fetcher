@@ -54,7 +54,8 @@
       "patch": "./cordis.patch.yml"
     },
     "client": {
-      "platform": "web"
+      "platform": "web",
+      "immediately": true
     },
     "engines": {
       "dsh": ">=0.2.2-rc.1"
