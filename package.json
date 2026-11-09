@@ -1,6 +1,6 @@
 {
   "name": "dsh-paper-fetcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "文献下载：在左侧面板输入论文标题或 DOI，自动检索开放获取 PDF 并按规范命名保存到所选目录。",
   "type": "module",
   "main": "lib/index.js",
