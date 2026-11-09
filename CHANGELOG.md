@@ -2,6 +2,18 @@
 
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)：`主版本.次版本.修订号`。
 
+## [1.0.1] - 2026-11-09
+
+### 修复
+
+- 侧栏图标不出现：`dsh.client` 补上 `immediately: true`，浏览器端脚本随页面加载注入。
+- 浏览器端模块 id 与加载器行名统一为 `dsh-paper-fetcher`。
+
+### 变更
+
+- 包名、仓库名、路由鉴权头统一为 `dsh-paper-fetcher`。
+- 本地存储改用 `dsh-paper-fetcher.*` 新命名空间；加载时清掉旧 `dsh-paper-download.*` 键，插件回到全新状态。
+
 ## [1.0.0] - 2026-11-09
 
 首个公开版本。
