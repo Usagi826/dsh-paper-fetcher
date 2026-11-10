@@ -30,15 +30,22 @@
 | --- | --- |
 | 1 | arXiv 已知编号 |
 | 2 | 出版商镜像（Nature 系 `10.1038/` 走 `link.springer.com`） |
-| 3 | Unpaywall |
-| 4 | Semantic Scholar |
-| 5 | bioRxiv / medRxiv / chemRxiv 预印本（文件名标注 `(preprint)`） |
-| 6 | doi.org 落地页里的 PDF 链接（仅前 5 项全失败时） |
+| 3 | ChinaXiv（仅中文文献，见下） |
+| 4 | Unpaywall |
+| 5 | Semantic Scholar |
+| 6 | bioRxiv / medRxiv / chemRxiv 预印本（文件名标注 `(preprint)`） |
+| 7 | doi.org 落地页里的 PDF 链接（仅前面各项全失败时） |
 
 - 排在前的来源命中后不再请求后面的；单个候选 20 s 超时。
 - 元数据来自 Crossref → OpenAlex → Semantic Scholar。
 - 每个候选校验 `%PDF-` 文件头、大小与页数：少于 3 页视为摘要 / 封面 / 更正并丢弃；PDF 内 DOI 与目标不符也跳过。
 - 落地页链接会排除 supplement、MOESM、peer-review、correction 等附件。
+
+### 中文文献
+
+标题或刊名里出现汉字、或 DOI 属于中国注册机构时，额外检索 **ChinaXiv**（中科院预印本平台），可免登录直接下载 PDF。
+
+**收录范围有限**：ChinaXiv 只收预印本，中文期刊正刊基本不在其中。知网、万方、维普，以及《中国科学院院刊》《软件学报》等期刊的全文需要机构订阅或登录，插件不会绕过——这类文献只给出元数据和 `link.cnki.net` 等手动链接。实测中文正刊命中率很低，请勿期待自动下载。
 
 ## 期刊缩写
 
@@ -63,6 +70,7 @@
 - 任务在后台运行：切换或关闭面板都不会中断下载。
 - 联系邮箱与保存目录只存在本机浏览器，不随插件分发。
 - 仅下载开放获取全文，不绕过付费墙；请遵守出版商条款与机构订阅协议。
+- 中文文献仅覆盖 ChinaXiv 预印本，期刊正刊需在知网等平台自行获取。
 - 无第三方运行时依赖，安装无需编译。
 
 ## 接口
